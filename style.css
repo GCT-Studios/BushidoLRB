@@ -73,7 +73,7 @@ pre {
 	background-color: #f0f0f0;
 	font-family: 'Custom Mono', monospace;
 	padding: 1rem;
-	font-size: smaller;
+	font-size: x-small;
 	white-space: pre-wrap;
 }
 code { margin-bottom: 1.5rem; display: block;}
@@ -192,7 +192,7 @@ ol, ul a {
 	text-decoration: none;
 }
 
-.toc-element-level-1 a, .toc-element-level-2 a {
+.toc-element-level-1 a, .toc-element-level-2 a, .toc-element-level-3 a {
 	color: black;
 }
 
@@ -255,6 +255,18 @@ ol, ul a {
 
 /* fake leading */
 #list-toc-generated .toc-element-level-2::after{
+    content: 
+        ".............................................."
+        ".............................................."
+        ".............................................."  
+        "........";
+    float: left;
+    width: 0;
+    padding-left: 5px;
+    letter-spacing: 2px;
+}
+
+#list-toc-generated .toc-element-level-3::after{
     content: 
         ".............................................."
         ".............................................."
