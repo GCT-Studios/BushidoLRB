@@ -93,6 +93,9 @@ figcaption { caption-side: top; padding-bottom: 0.75rem;
 
 /* 3.2 Page Breaks */
 .page-break { break-after: page; }
+
+h1:not(.no-break) { break-before: page; margin-block-start: 0rem; margin-block-end: 1.66rem; }
+
 h2:not(.no-break) { break-before: page; margin-block-start: 0rem; margin-block-end: 1.66rem; }
 h2.no-break:not(.top) { margin-block-start: 3rem; margin-block-end: 1.66rem;}
 h2.top { margin-block-start: 0rem; margin-block-end: 1.66rem; }
