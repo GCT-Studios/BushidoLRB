@@ -306,7 +306,16 @@ ol, ul a {
 	@top-right-corner { background-color: #445a75; content: " ";}
 }
 
+/* 5.4 Callouts */
+.callout {
+	border: 1px solid black;
+	padding: 10px 10px 0px 10px;
+	margin-bottom: 10px;
+}
 
+.callout-title {
+    font-weight: bold;
+}
 
 /* - * - * - * - * - * - * - * - * - * - */
 /* 6.0 STIX FONTS (for Math Publishing)
