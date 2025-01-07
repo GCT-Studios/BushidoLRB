@@ -59,7 +59,7 @@
 html { font-family: 'Roboto', sans-serif; }
 h1 { border-bottom: 1px solid black; margin-bottom: 2rem; padding-bottom: 1rem; }
 h2 { border-bottom: 0.1875rem solid black; margin-bottom: 1rem; padding-bottom: 0.5rem; }
-p {	text-align: justify; line-height: 1.4rem; }
+p {	text-align: left; line-height: 1.4rem; }
 a { color: #347dbd; }
 a:hover { color: #FC814A; }
 mark { color: purple; background-color: inherit; }
@@ -306,7 +306,7 @@ ol, ul a {
 	@top-right-corner { background-color: #445a75; content: " ";}
 }
 
-/* 5.4 Callouts */
+/* 5.4 Callouts & Lists */
 .callout {
 	border: 1px solid black;
 	padding: 10px 10px 0px 10px;
@@ -315,6 +315,11 @@ ol, ul a {
 
 .callout-title {
     font-weight: bold;
+}
+
+.li {
+	position: relative;
+	left: 20px;
 }
 
 /* - * - * - * - * - * - * - * - * - * - */
