@@ -66,7 +66,7 @@ mark { color: purple; background-color: inherit; }
 light-mark { color: purple; }
 img { max-width: calc(100% - 3rem); }
 .img-75mm { height: 75mm; }
-.element { max-width: 100%; }
+.elemental { max-width: 100%; }
 
 center { border: 0.5px solid gray; padding: 1.5rem; }
 
