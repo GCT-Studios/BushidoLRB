@@ -253,7 +253,7 @@ ol, ul a {
     overflow-x: hidden;
 }
 
-/* fake leading 
+/* fake leading */
 #list-toc-generated .toc-element-level-2::after{
     content: 
         ".............................................."
@@ -291,7 +291,7 @@ ol, ul a {
 
 #list-toc-generated .toc-element a{
     right: 0;
-}*/
+}
 
 /* 5.3 Banners */
 .banner-class {	page: top-banner; }
