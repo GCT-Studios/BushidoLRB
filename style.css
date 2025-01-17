@@ -178,10 +178,6 @@ h2 { string-set: subsection content(text); }
 	@bottom-left { content: none; }
 }
 
-#list-toc-generated {
-	column-count: 2;
-}
-
 /* Additional CSS: Advanced Styling for TOC */
 .toc-header { margin-bottom: 1rem; border-bottom: 0.375rem solid black; }
 .table-of-contents a, .table-of-contents a:hover {
