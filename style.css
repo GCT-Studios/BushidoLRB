@@ -208,8 +208,8 @@ ol, ul a {
 
 #list-toc-generated .toc-element-level-1 {
     border-bottom: 0.0625rem solid black;
-    margin-top: 2rem; margin-bottom: 1rem;
-    padding-bottom: 0.5rem;
+    margin-top: 0.75rem; margin-bottom: 0.75rem;
+    padding-bottom: 0.25rem;
     font-weight: bold;
 }
 
@@ -231,7 +231,7 @@ ol, ul a {
 
 #list-toc-generated .toc-element-level-2 { 
     counter-increment: counterTocLevel2;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 #list-toc-generated .toc-element-level-2::before{ 
@@ -241,7 +241,7 @@ ol, ul a {
 
 #list-toc-generated .toc-element-level-3 { 
     counter-increment: counterTocLevel3;
-    margin-bottom: 0.5rem;
+    margin-bottom: 0.25rem;
 }
 
 #list-toc-generated .toc-element-level-3::before{ 
