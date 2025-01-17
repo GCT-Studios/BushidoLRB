@@ -208,8 +208,8 @@ ol, ul a {
 
 #list-toc-generated .toc-element-level-1 {
     border-bottom: 0.0625rem solid black;
-    margin-top: 1rem; margin-bottom: 0.5rem;
-    padding-bottom: 0.25rem;
+    margin-top: 2rem; margin-bottom: 1rem;
+    padding-bottom: 0.5rem;
     font-weight: bold;
 }
 
@@ -331,28 +331,43 @@ li {
 }
 
 table tr td {
-	border-left: 1px solid var(--lightgray);
+	border-left: 1px solid gray;
 }
 
 table tr td:first-child {
 	border-left: 0;
 }
 
-#damagetable th,
-#damagetable tr:nth-child(0), #damagetable tr:nth-child(2), #damagetable tr:nth-child(5), #damagetable tr:nth-child(6), #damagetable tr:nth-child(7), #damagetable tr:nth-child(10) { 
-	background-color: var(--tertiary); 
+.woundtable thead { 
+	background-color: darkgrey; 
 }
 
-#damagetable tr td {
+.woundtable thead tr { 
+	color: var(--light);
+}
+
+.woundtable tbody tr:nth-child(2), .woundtable tbody tr:nth-child(5), .woundtable tbody tr:nth-child(6), .woundtable tbody tr:nth-child(7), .woundtable tbody tr:nth-child(10) { 
+	background-color: lightgrey; 
+}
+
+.woundtable tr td {
 	border-bottom: none;
 }
 
-.headedtable th, .headedtable tr:nth-child(even) { 
-	background-color: var(--tertiary);
+.headedtable thead { 
+	background-color: darkgrey;
+}
+
+.headedtable thead tr { 
+	color: white;
+}
+
+.headedtable tr:nth-child(even) { 
+	background-color: lightgrey;
 }
 
 .unheadedtable tr:nth-child(even) { 
-	background-color: var(--tertiary);
+	background-color: lightgrey;
 }
 
 
