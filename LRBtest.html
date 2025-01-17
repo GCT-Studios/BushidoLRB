@@ -1,58 +1,23 @@
-<html>
-<head>
-	<title>Bushido: Risen Sun LRB</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<script src="toc.js"></script>
-	<script src="paged.polyfill.js"></script>
-	<script>
-		class handlers extends Paged.Handler {
-		    constructor(chunker, polisher, caller) {
-				super(chunker, polisher, caller);
-		    }
-		    beforeParsed(content){
-			    createToc({
-		    		content: content,
-		    		tocElement: '#toc',
-		    		titleElements: [ 'h1:not(.cover-header)' ]
-		    	});
-			}
-		  }
-		  Paged.registerHandlers(handlers);
-	</script>
-</head>
-
-<body>
-
-<!-- 1.0 Cover Page -->
-<div class="cover-page">
-	<h1 class="cover-header no-counter">Bushido: Risen Sun</h1>
-	<h3 class="cover-header no-counter">Living Rulebook</h3>
-	<h3 class="cover-header no-counter"><i>test version</i></h3>
-	<h3 class="cover-header no-counter">2025-01-17</h3>
-</div>
-
-<!-- 2.0 Table of Contents -->
-<div class="table-of-contents">
-	<h1 class="cover-header toc-header no-break no-counter" id="toc-start">Table of Contents</h1>
-	<ol id="toc">
-<!-- toc.js will automatically insert TOC here -->
-	</ol>
-</div>
-
-<!-- 3.0 Start of Main Content -->
-
-<!-- Setting the footer -->
-<p class="footer"></p>
-
-<!-- Reseting the header counters (as cover page also uses them) -->
-<div class="counter-reset"></div>
-
-<!-- 3.1 Section 1 -->
-   <div id="quartz-root" class="page">
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Living Rulebook</title>
+    <meta charset="utf-8"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM Plex Mono&amp;family=Schibsted Grotesk:wght@400;700&amp;family=Source Sans Pro:ital,wght@0,400;0,600;1,400;1,600&amp;display=swap"/>
+    <link rel="icon" href="../static/favicon.svg"/>
+    <link href="../index.css" rel="stylesheet" type="text/css" spa-preserve/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/katex.min.css" rel="stylesheet" type="text/css" spa-preserve/>
+    <script src="../prescript.js" type="application/javascript" spa-preserve></script><script type="application/javascript" spa-preserve>const fetchData = fetch("../static/contentIndex.json").then(data => data.json())</script>
+  </head>
+  <body data-slug="Rulebook/LRB">
+    <div id="quartz-root" class="page">
       <div id="quartz-body">
         <div class="center">
           <div class="page-header">
             <div class="popover-hint">
+              <h1 class="article-title">Living Rulebook</h1>
               <p show-comma="true" class="content-meta"><span>Jan 17, 2025</span></p>
               <p class="feat-icons"></p>
             </div>
@@ -81,21 +46,21 @@
             <p></p>
             <p></p>
             <blockquote class="transclude" data-url="Getting-Ready" data-block>
-              <h1>Getting Ready</h1>
-              <p>For a game of Bushido, each player will need:</p>
-              <ul>
-                <li>A copy of these rules.</li>
-                <li>A set of Bushido miniatures and their cards.</li>
-                <li>A tape measure or a measuring ‘Widget’.</li>
-                <li>At least ten six-sided (D6) dice in two different colours. Five in one colour, and five in another.</li>
-                <li>Several coins, chips, or dice to track a model’s Ki Tokens during play; some people like to use ten-sided dice for this.</li>
-                <li>To protect your cards use plastic card sleeves and a ‘dry wipe’ marker pen.</li>
-                <li>An area to play on that is at least 2’ by 2’.
-                  Usually, you’ll need a bit more space than this to accommodate dice, cards, snacks, drinks, etc.
-                </li>
-                <li>Several pieces of terrain. These can vary in size, but no single piece should be larger than 9”x9”.</li>
-                <li>Optionally: Special Attack / Defence Cards for reference and a Bushido Token Set to help track ‘in-game’ states and effects.</li>
-              </ul>
+            <h1>Getting Ready</h1>
+            <p>For a game of Bushido, each player will need:</p>
+            <ul>
+              <li>A copy of these rules.</li>
+              <li>A set of Bushido miniatures and their cards.</li>
+              <li>A tape measure or a measuring ‘Widget’.</li>
+              <li>At least ten six-sided (D6) dice in two different colours. Five in one colour, and five in another.</li>
+              <li>Several coins, chips, or dice to track a model’s Ki Tokens during play; some people like to use ten-sided dice for this.</li>
+              <li>To protect your cards use plastic card sleeves and a ‘dry wipe’ marker pen.</li>
+              <li>An area to play on that is at least 2’ by 2’.
+                Usually, you’ll need a bit more space than this to accommodate dice, cards, snacks, drinks, etc.
+              </li>
+              <li>Several pieces of terrain. These can vary in size, but no single piece should be larger than 9”x9”.</li>
+              <li>Optionally: Special Attack / Defence Cards for reference and a Bushido Token Set to help track ‘in-game’ states and effects.</li>
+            </ul>
             </blockquote>
             <p></p>
             <p></p>
@@ -3823,33 +3788,24 @@
         </p>
       </footer>
     </div>
-
-<!-- 4.0 MathJax Add-on
-<script>
-window.MathJax = {
-	loader: { load: ['[tex]/ams'] },
-	tex: { packages: {'[+]': ['ams']} },
-	"fast-preview": { disabled: true },
-	extensions: ["tex2jax.js", "asciimath2jax.js", "TeX/AMSmath.js", "TeX/AMSsymbols.js", "TeX/noErrors.js"],
-	jax: ["input/TeX", "input/AsciiMath", "output/HTML-CSS"],
-	displayAlign: "left",
-	tex2jax: {
-  		inlineMath: [ ["\\(","\\)"] ],
-  		displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
-  		processEscapes: true
-	}, 
-	asciimath2jax: { delimiters: [['`','`']], preview: [""]},
-	"HTML-CSS": { fonts: ["STIX"] }
-}
-</script>
-<script type="text/javascript" sync src="MathJax-2.7.7/MathJax.js"></script>
--->
-
-<!-- Additional MathJax Code (if you want to re-render math)
-<script>
-	const math = document.getElementsByClassName("math");
- 	MathJax.Hub.Queue(["Typeset",MathJax.Hub,math]);  
-</script>
--->
-</body>
+  </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/contrib/copy-tex.min.js" type="application/javascript"></script><script type="application/javascript">function c(){let t=this.parentElement;t.classList.toggle("is-collapsed");let l=t.classList.contains("is-collapsed")?this.scrollHeight:t.scrollHeight;t.style.maxHeight=l+"px";let o=t,e=t.parentElement;for(;e;){if(!e.classList.contains("callout"))return;let n=e.classList.contains("is-collapsed")?e.scrollHeight:e.scrollHeight+o.scrollHeight;e.style.maxHeight=n+"px",o=e,e=e.parentElement}}function i(){let t=document.getElementsByClassName("callout is-collapsible");for(let s of t){let l=s.firstElementChild;if(l){l.addEventListener("click",c),window.addCleanup(()=>l.removeEventListener("click",c));let e=s.classList.contains("is-collapsed")?l.scrollHeight:s.scrollHeight;s.style.maxHeight=e+"px"}}}document.addEventListener("nav",i);window.addEventListener("resize",i);</script><script type="module">
+    let mermaidImport = undefined
+    document.addEventListener('nav', async () => {
+      if (document.querySelector("code.mermaid")) {
+        mermaidImport ||= await import('https://cdnjs.cloudflare.com/ajax/libs/mermaid/10.7.0/mermaid.esm.min.mjs')
+        const mermaid = mermaidImport.default
+        const darkMode = document.documentElement.getAttribute('saved-theme') === 'dark'
+        mermaid.initialize({
+          startOnLoad: false,
+          securityLevel: 'loose',
+          theme: darkMode ? 'dark' : 'default'
+        })
+    
+        await mermaid.run({
+          querySelector: '.mermaid'
+        })
+      }
+    });
+  </script><script src="../postscript.js" type="module"></script>
 </html>
