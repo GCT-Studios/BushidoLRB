@@ -64,7 +64,7 @@ a { color: #347dbd; }
 a:hover { color: #FC814A; }
 mark { color: purple; background-color: inherit; }
 light-mark { color: purple; }
-img { max-width: calc(100% - 3rem); }
+img { max-width: calc(100% - 3rem); max-height: calc(50% - 3rem); }
 table img { max-width: 100%; }
 
 center { border: 0.5px solid gray; padding: 1.5rem; }
