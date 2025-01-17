@@ -64,9 +64,6 @@ a { color: #347dbd; }
 a:hover { color: #FC814A; }
 mark { color: purple; background-color: inherit; }
 light-mark { color: purple; }
-img { max-width: calc(100% - 3rem); }
-.img-75mm { height: 75mm; }
-.elemental { max-width: 100%; }
 
 center { border: 0.5px solid gray; padding: 1.5rem; }
 
@@ -179,6 +176,9 @@ h3 { string-set: subsection content(text); }
 @page table-of-contents {
 	@top-right { content: none; }
 	@bottom-left { content: none; }
+}
+
+#list-toc-generated {
 	column-count: 2;
 }
 
@@ -257,7 +257,7 @@ ol, ul a {
     overflow-x: hidden;
 }
 
-/* fake leading */
+/* fake leading 
 #list-toc-generated .toc-element-level-2::after{
     content: 
         ".............................................."
@@ -295,7 +295,7 @@ ol, ul a {
 
 #list-toc-generated .toc-element a{
     right: 0;
-}
+}*/
 
 /* 5.3 Banners */
 .banner-class {	page: top-banner; }
