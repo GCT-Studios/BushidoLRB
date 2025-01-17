@@ -76,14 +76,15 @@ pre {
 	font-size: x-small;
 	white-space: pre-wrap;
 }
-code { margin-bottom: 1.5rem; display: block;}
+code { margin-bottom: 1.5rem; display: block; }
 figure {
 	margin-block-start: 2rem; margin-block-end: 2rem;
 	margin-inline-start: 0rem; margin-inline-end: 0rem;
 }
 figcaption { caption-side: top; padding-bottom: 0.75rem;
 	border-bottom: 0.5px solid gray; margin-bottom: 1.5rem;
-	color: gray; font-weight: bold;} 
+	color: gray; font-weight: bold;
+} 
 
 /* - * - * - * - * - * - * - * - * - * - */
 /* 3.1 Page Size */
@@ -199,9 +200,9 @@ ol, ul a {
 }
 
 /* set the style for the list numbering to none */
-#list-toc-generated{ list-style: none; }
+#list-toc-generated { list-style: none; }
 
-#list-toc-generated .toc-element a::after{
+#list-toc-generated .toc-element a::after {
     content: target-counter(attr(href), page);
     float: right;
 }
@@ -219,12 +220,12 @@ ol, ul a {
     counter-reset: counterTocLevel1; 
 }
 
-#list-toc-generated .toc-element-level-1{ 
+#list-toc-generated .toc-element-level-1 { 
     counter-increment: counterTocLevel1; 
     counter-reset: counterTocLevel2; 
 }
 
-#list-toc-generated .toc-element-level-1::before{ 
+#list-toc-generated .toc-element-level-1::before { 
     content: counter(counterTocLevel1) ". ";
     padding-right: 5px;
 }
@@ -234,7 +235,7 @@ ol, ul a {
     margin-bottom: 0.25rem;
 }
 
-#list-toc-generated .toc-element-level-2::before{ 
+#list-toc-generated .toc-element-level-2::before { 
     content: counter(counterTocLevel1) "." counter(counterTocLevel2) " ";
     padding-right: 5px;
 }
@@ -244,19 +245,19 @@ ol, ul a {
     margin-bottom: 0.25rem;
 }
 
-#list-toc-generated .toc-element-level-3::before{ 
+#list-toc-generated .toc-element-level-3::before { 
     content: counter(counterTocLevel2) "." counter(counterTocLevel3) " ";
     padding-right: 5px;
 }
 
 /* hack for leaders */
 
-#list-toc-generated{
+#list-toc-generated {
     overflow-x: hidden;
 }
 
 /* fake leading */
-#list-toc-generated .toc-element-level-2::after{
+#list-toc-generated .toc-element-level-2::after {
     content: 
         ".............................................."
         ".............................................."
@@ -268,7 +269,7 @@ ol, ul a {
     letter-spacing: 2px;
 }
 
-#list-toc-generated .toc-element-level-3::after{
+#list-toc-generated .toc-element-level-3::after {
     content: 
         ".............................................."
         ".............................................."
@@ -280,18 +281,18 @@ ol, ul a {
     letter-spacing: 2px;
 }
 
-#list-toc-generated .toc-element{
+#list-toc-generated .toc-element {
     display: flex; 
 }
 
-#list-toc-generated .toc-element a::after{
+#list-toc-generated .toc-element a::after {
     position: absolute;
     right: 0;
     background-color: white;
     padding-left: 6px;
 }
 
-#list-toc-generated .toc-element a{
+#list-toc-generated .toc-element a {
     right: 0;
 }
 
