@@ -355,11 +355,6 @@ table tr td:first-child {
 	background-color: var(--tertiary);
 }
 
-/* 5.6 Blockquotes */
-
-.transclude {
-	margin: 0;
-}
 
 /* - * - * - * - * - * - * - * - * - * - */
 /* 6.0 STIX FONTS (for Math Publishing)
