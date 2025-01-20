@@ -179,6 +179,7 @@ h2 { string-set: subsection content(text); }
 @page table-of-contents {
 	@top-right { content: none; }
 	@bottom-left { content: none; }
+    @bottom-right { content: none; }
 }
 
 /* Additional CSS: Advanced Styling for TOC */
