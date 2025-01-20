@@ -27,7 +27,7 @@
 <div class="cover-page">
 	<h1 class="cover-header no-counter">Bushido: Risen Sun<br/>Living Rulebook</h1>
 	<p><i>test version</i></p>
-	<p>2025-01-17</p>
+	<p>2025-01-20</p>
   <p><img src="./images/Logo-NoText-Lines.svg" /></p>
 </div>
 
@@ -71,138 +71,431 @@
   <li>Optionally: Special Attack / Defence Cards for reference and a Bushido Token Set to help track ‘in-game’ states and effects.</li>
 </ul>
 
+<h1>Terms &amp; Concepts</h1>
+<p>
+  <strong>Activating Model:</strong> The model as chosen by the Active Player currently resolving its action.
+</p>
+<p>
+  <strong>Active Player:</strong> The player whose turn it is to activate a model.
+</p>
+<p>
+  <strong>Base-to-Base (BtB):</strong> A model is in BtB with another model if their bases are physically touching. <br /> An Activating Model not in BtB already can only enter BtB with 1 Enemy model per activation. <br /> Some ranges are specified as BtB rather than in inches.
+</p>
+<p>
+  <strong>Battlefield:</strong> A game of Bushido takes place on a 2’x2’ area we call the Battlefield. <br /> Models on the Battlefield or designated as being Elsewhere are In Play.
+</p>
+<p>
+  <strong>Controller:</strong> The player with whom a model is currently Friendly.
+</p>
+<p>
+  <strong>Counters:</strong> Counters are named for the effect that requires them and may be used to count turns, activations, or some other timing effect before they expire. <br /> Activation Counters are a particular type of counter. These show how many activations a model can make this turn. <br /> See Condition.
+</p>
+<p>
+  <strong>Cover:</strong> When Terrain partially blocks LoS to a model, that model gains Cover. <br /> A model benefits from Cover from an Enemy model if any straight line from the Enemy passes through an Obscuring or Blocking terrain element that is within 1” of the Target model.
+</p>
+<p>
+  <strong>Damage:</strong> A model is Damaged or takes Damage when it suffers wounds or its wound boxes are marked. <br /> Model A deals or causes damage when a model has wound boxes marked due to an effect on model A or an action taken by model A.
+</p>
+<p>
+  <strong>Damage Roll:</strong> A roll using 2D6, applying any negative or positive Modifiers then cross-referencing on the Wound Table in the column equal to the Success Level of the tests, to see the number of wounds inflicted on a model.
+</p>
+<p>
+  <strong>Deploy:</strong> When a model is first put into play it is Deployed onto the Battlefield. <br /> After Terrain is Set Up, any effects that add more terrain to the Battlefield may also say they are Deployed. This is not a Move or Place. <br /> A model may not be Deployed into BtB with an Enemy model or in an Enemy Model’s ZoC. <br /> Models are Deployed with no Activation Counters.
+</p>
+<blockquote class="callout note" data-callout="note">
+  <div class="callout-title">
+    <div class="callout-icon"></div>
+    <div class="callout-title-inner">
+      <p>NOTE</p>
+    </div>
+  </div>
+  <p>Terrain instead follows the Terrain Rules and any restrictions for the effect putting terrain into play.</p>
+</blockquote>
+<p>
+  <strong>Dice Rolls:</strong> Bushido uses ordinary six-sided dice. <br /> When a dice is rolled, the number given is referred to as the value on the dice.
+</p>
+<p>We use dice in the following ways:</p>
+<ul>
+  <li>D6: The number shown on a single six-sided dice roll</li>
+  <li>2D6: Two dice added together to give a value between 2 and 12</li>
+  <li>D3: Roll a D6. A roll of 1-2=1, 3-4=2, 5-6=3.</li>
+  <li>D2: Roll a D6. A roll of 1-3=1, 4-6=2.</li>
+</ul>
+<p>Some abilities call for a coin flip; this can be represented with a D2 if needed.</p>
+<p>In some instances a random model or other element may need to be selected, any straightforward method should suffice such as assigning each a number then rolling a dice.</p>
+<p>
+  <strong>Effects:</strong> This is a catch-all term for various rules including Ki Feats, Theme bonuses, Unique Effects, Event Cards or others. <br /> Usually, for timing we say “Effects that happen in this phase” or similar; this means any rule that says it happens in that phase.
+</p>
+<p>
+  <strong>Elsewhere:</strong> Elsewhere is a specific place for models in play but not on the Battlefield. <br /> These may be Flanking troops, models flying high over the battle or fighting on another plane of existence. <br /> Models in Elsewhere generate Ki Tokens as usual and are affected by traits and states (such as Fire and Regenerate) but do not generate Activation Markers and cannot spend Tokens.
+</p>
+<p>
+  <strong>Enemy/Friendly:</strong> Models can either be Friendly or Enemy, depending on which player’s Warband they are in. <br /> Models in a player’s own Warband are considered Friendly. <br /> Models in an Opponent’s Warband are considered Enemy.
+</p>
+<p>
+  <strong>Entering:</strong> During any move, the first time a model comes into contact with an area of the Battlefield, terrain element, or named effect it is considered to Enter that area, terrain, or effect. <br /> If an effect is over multiple areas or terrain elements (e.g. Void Rifts) the model only Enters the effect the first time it contacts the effect. <br /> If a model is Placed into an area of the Battlefield, terrain element, or named effect it is considered to Enter that area, terrain or effect.
+</p>
+<p>
+  <strong>Exhausted:</strong> A model with no Activation Counters is considered Exhausted.
+</p>
+<p>
+  <strong>Facing:</strong> A model’s Facing line is directly in the centre of the front of its base. It should be marked with a line or dot on the model’s base. <br /> Ninety degrees either side of a model’s facing line shows its Front Arc and should be marked on the model’s base with lines or dots. <br /> A model is Facing anything forward of its Front Arc. <br /> A model is Directly Facing anything in front of its facing line.
+</p>
+<p>
+  <img src="./images/diagram-facing.webp" width="auto" height="auto" alt />
+</p>
+<p>
+  <strong>Faction:</strong> Models have a Faction Icon to denote which of the many warring factions from the Jwar Isles they belong to. <br /> If a rule references a Faction, it refers to the Faction Icon printed on the front of the model’s card.
+</p>
+<p>
+  <strong>Generate Ki:</strong> Generate refers to gaining Ki in the starting phase, step 2. Any other time a model gains Ki it is not Generated unless specifically stated.
+</p>
+<p>
+  <strong>Initiative:</strong> The model with the Initiative checks its Attack dice first in Melee Exchanges and declares the use of Ki Boosts and Ki Feats after their Opponent (See Melee Exchange). <br /> The Activating Model has the Initiative unless a trait, State or game Effects changes this.
+</p>
+<p>
+  <strong>In Play:</strong> A model is in play when it is on the Battlefield or Elsewhere. <br /> A model is not in play when not recruited into the Warband and/or has been Killed or removed from Play.
+</p>
+<p>
+  <strong>Ki Boost:</strong> A Ki Boost is a special type of Ki Feat that increases statistics.
+</p>
+<p>
+  <strong>Killed:</strong> When a model has 0 wounds remaining on its Wound Track it is Killed, remove the model from the table.
+</p>
+<p>
+  <strong>Line of Sight (LoS):</strong> A model can draw LoS to points in its Facing. LoS is achieved if you can draw a straight line from any part of the origin model’s Base to a point in that origin model’s Facing.
+</p>
+<p>Terrain and models block LoS except for the following:</p>
+<ul>
+  <li>LoS is not blocked by models and Terrain elements smaller than the model LoS is being drawn to.</li>
+  <li>LoS is not blocked by models (other than the model you are drawing LoS to) and Terrain elements smaller than the model drawing LoS.</li>
+</ul>
+<p>LoS may be checked for any model (Friendly or Enemy) at any time.</p>
+<blockquote class="callout example" data-callout="example">
+  <div class="callout-title">
+    <div class="callout-icon"></div>
+    <div class="callout-title-inner">
+      <p>EXAMPLE</p>
+    </div>
+  </div>
+  <p>
+    <img src="./images/diagram-LoS.webp" width="auto" height="auto" alt /> Model A has no LoS to Model B since Models E and D are blocking LoS. <br /> Model C is Medium Sized, so has LoS to Model A, likewise Model A has LoS to Model C.
+  </p>
+</blockquote>
+<p>
+  <strong>Markers:</strong> Markers are used to mark what States are currently affecting a model. See Model States.
+</p>
+<p>
+  <strong>Measuring Distances:</strong> The unit of measure in Bushido is inches.
+</p>
+<ul>
+  <li> Movement distances are measured from the nearest base edge to the point the model wishes to move following the route the model’s base will take. </li>
+  <li>Targeting distances are measured from the nearest base edge of a model to the nearest base edge of the Target. </li>
+  <li>Measurements, whether distances, LoS, or other measurements, may be taken at any time for any reason by either player. </li>
+  <li>When measuring if a model or point is within a given range then precisely up to that range is considered within.</li>
+  <li>If a range is given as BtB, then the model is in range of itself. </li>
+</ul>
+<p>
+  <img src="./images/diagram-measuring_distances.webp" width="auto" height="auto" alt />
+</p>
+<blockquote class="callout example" data-callout="example">
+  <div class="callout-title">
+    <div class="callout-icon"></div>
+    <div class="callout-title-inner">
+      <p>Example</p>
+    </div>
+  </div>
+  <p>If the edge of a model’s base is exactly 6” away from its Opponent’s base, it is considered to be within 6”.</p>
+  <blockquote class="callout note" data-callout="note">
+    <div class="callout-title">
+      <div class="callout-icon"></div>
+      <div class="callout-title-inner">
+        <p>NOTE</p>
+      </div>
+    </div>
+    <p>In timed play, the player whose clock is running always has priority and should not be obstructed by their opponents’ measuring devices.</p>
+  </blockquote>
+</blockquote>
+<p>
+  <strong>Modifiers:</strong> When a statistic is modified it can never go above double its base value.
+</p>
+<p>If results are divided and leave fractions, always round down except in the case of distances, where fractions of inches are kept. <br /> Numerical values of traits can be modified. </p>
+<p>If an effect requires dice to be substituted, the value of the dice is often fixed to some value. It is helpful to physically remove the dice and place it, showing that value, with the dice that were rolled. <br /> If a dice is substituted, it cannot be re-rolled. </p>
+<p>If modifiers, rerolls, adding or removal of dice affect any roll then only after all of these have been resolved can a result be determined.</p>
+<p>
+  <strong>Movement:</strong> Movement is measured using a tape measure (or other measuring devices). <br /> If a model must move Toward another game element (such as another model or Terrain piece), then it cannot increase its distance from that element for any part of its movement. <br /> If it must move Directly Toward a game element, then it can only move in a straight line drawn from the centre of its base to the centre of the game element. <br /> Similarly, a model which must move Away cannot decrease its distance from that element for any part of its movement.
+</p>
+<p>If it must move Directly Away from a game element, then it can only move in a straight line drawn from the centre of its base away from the centre of the game element.</p>
+<p>An Activating Model can only enter BtB with one Enemy model per activation. </p>
+<p>
+  <strong>Open &amp; Hidden Information:</strong> In Bushido, all information is ‘open’ unless explicitly stated otherwise. <br /> This means that both players are entitled to read any rules, stats, model cards, special cards or any other information pertinent to the game, unless the rules explicitly state the information is hidden. <br /> Each player’s Hidden Information should be recorded on one sheet of paper and handed over after the game. <br /> If you have a third party, they can be used to check hidden information during the game to make sure no mistakes happen.
+</p>
+<p>
+  <strong>Owner:</strong> A model’s owner is the player who initially recruited the model into their Warband or summoned the model, ignoring any control markers or game Effects.
+</p>
+<p>
+  <strong>Place:</strong> Sometimes Models are Placed on the table instead of moving around the table.
+</p>
+<p>
+  <strong>Replace:</strong> When a model is replaced, swap the model on the board with the new model. If the model was not in play, the new model is considered Deployed.
+</p>
+<p>The player using the replacing effect chooses the new model’s Facing. <br /> If the new model has a different sized base, then it must be placed so that the larger base entirely covers the area of the smaller base. </p>
+<p>If the model being replaced was in BtB with an Enemy model, the new model must be placed in BtB with the Enemy model if possible. </p>
+<p>When 2 models swap positions, replace each model with the other model.</p>
+<p>
+  <strong>Select:</strong> No [LoS](Line of Sight) is needed to select a model; selecting is not targeting. <br /> A model may select itself.
+</p>
+<p>
+  <strong>Size:</strong> Unless a model’s Size is stated as a trait, it is determined by its base.
+</p>
+<ul>
+  <li>Small Base (30mm) = Small Size</li>
+  <li>Medium Base (40mm) = Medium Size</li>
+  <li>Large Base (50mm) = Large Size</li>
+  <li>Huge Base (60mm) = Huge Size</li>
+</ul>
+<p>Tiny and Huge models are indicated by Traits. Models with these Traits have the given size regardless of base size.</p>
+<p>
+  <strong>Summon:</strong> When a model is Summoned to the game it is added to the Warband in addition to the models already recruited. <br /> You do not need to pay the Rice Cost of a Summoned model. <br /> Some models have <strong>Su</strong> as their Rice Cost, these can only enter play by being Summoned.
+</p>
+<p>When a non-unique model is Summoned to the game it never has any Enhancement - Equipment cards attached to its card. <br /> If a unique model that was recruited into the Warband is Summoned after being removed from the game, it retains any Enhancement - Equipment cards it was recruited with. </p>
+<p>
+  <strong>Supporting Dice:</strong> When making a Test, up to 2 Dice may be chosen as supporting dice, these each add +1 to the value of the highest [dice roll](Dice Rolls) to get the final result.
+</p>
+<p>
+  <strong>Surprised:</strong> A model is Surprised if an Activating Enemy model that did not begin its activation in BtB, performs an action that Targets it or brings it into BtB and that Enemy model started outside of LoS and remains outside of LoS during Movement.
+</p>
+<p>Surprised models may not declare Ki Feats or Ki Boosts, are always the Attacker second in Melee Exchanges, may not benefit from traits or effects that affect Initiative and suffer a -1 Melee Pool modifier. <br /> They may still declare Special Abilities (Attacks and Defences). <br /> Models are only Surprised until the action in which they became Surprised is resolved. <br /> Effects which are not Ki Feats may still be used. </p>
+<p>
+  <strong>Target:</strong> A model must be able to draw [LoS](Line of Sight) to another model to Target it. <br /> A model may always Target itself.
+</p>
+<p>
+  <strong>Test:</strong> Whenever a model attempts an action which may succeed or fail, its controlling player [rolls dice](Dice Rolls) to complete a Test. <br /> The value of the dice rolled will determine if the model succeeds or fails the test.
+</p>
+<p>
+  <strong>Timing:</strong> Any effect which does not specify when it can be used may be used any time. <br /> The exception is during Melee Exchanges or Ranged Attacks, where the timing is restricted as detailed in the Melee Exchanges and Ranged Attacks section. <br /> If both players wish to use such Effects the Active Player goes first. <br /> If an effect does not have a stated expiration time, it ends in the End Phase.
+</p>
+<p>
+  <strong>Trap:</strong> When a model activates, only one Trap Effect may be used.
+</p>
+<p>
+  <strong>Tokens:</strong> Tokens are used to track a model’s resources, such as Ki Tokens.
+</p>
+<p>
+  <strong>Virtue Tokens:</strong> Many effects give out Virtue Tokens, most commonly the Virtue Trait. <br /> This particular type of Token represents different benefits depending on the other models you recruit.
+</p>
+<p>When a Virtue Token is spent by the profile which has it, it chooses one of the available abilities. Some models have abilities that can only be used by spending a Virtue Token. <br /> When a model spends a Virtue Token you may choose one permitted ability on the card of any Friendly model In Play. </p>
+<blockquote class="callout note" data-callout="note">
+  <div class="callout-title">
+    <div class="callout-icon"></div>
+    <div class="callout-title-inner">
+      <p>NOTE</p>
+    </div>
+  </div>
+  <p>The abilities usually say “This model…”. This refers to the model spending the token since that model gains the ability. You read it as if it were reading the spending model’s profile card.</p>
+  <blockquote class="callout note" data-callout="note">
+    <div class="callout-title">
+      <div class="callout-icon"></div>
+      <div class="callout-title-inner">
+        <p>NOTE</p>
+      </div>
+    </div>
+    <p>Some models have abilities that are restricted to a certain group or even specific models; see individual cards for details.</p>
+  </blockquote>
+</blockquote>
+<p>
+  <strong>Warband:</strong> A player’s Warband consists of recruited, Summoned and Controlled models as well as Special cards.
+</p>
+<p>
+  <strong>Zone of Control (ZoC):</strong> In Bushido, every model has a ZoC extending 1” from the edge of its base to any point within its [LoS](Line of Sight). <br /> Models ignore Friendly ZoC, but once a model enters an Enemy model’s ZoC, it may only move directly towards that model, or directly away, until it leaves the ZoC.
+</p>
+<p>Models beginning their activation in one or more Enemy model’s ZoC must either:</p>
+<ul>
+  <li>declare a Stand Up action, or an action that allows them to move into BtB with one of those models, and move directly toward the Enemy model until they reach BtB, or </li>
+  <li>declare another action that allows a move. However, they must move directly away from the Enemy model until they leave the ZoC; or away from all models until they leave all Enemy model’s ZoC if in multiple ZoCs, after which they can move freely.</li>
+</ul>
+<p>Models can ignore the ZoC of Models that are in BtB with Enemy models for movement and declaring or performing actions (such as Ranged Attack Actions or Scenario Actions which otherwise cannot be performed in a ZoC). <br /> If a model moves out of BtB, then it may ignore the ZoC until that move is completed. </p>
+<p>
+  <img src="./images/diagram-ZoC.webp" width="auto" height="auto" alt />
+</p>
 
 <h1>Cards</h1>
-<h3 id="profile-cards"> Profile Cards </h3>
+<h1 id="profile-cards">Profile Cards <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#profile-cards" class="internal">
+	<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+	  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+	</svg>
+  </a>
+</h1>
 <p>Profile cards contain all the rules specific to all models represented by that card. You may also use the profile card to keep track of the wounds sustained by your model(s), Ki Tokens and game effects.</p>
-<h4 id="name"> Name </h4>
-<p>The name of the model(s). If this card represents a unique individual character rather than one or more generic profiles, this has a special border, and the Rice Cost is coloured Gold.</p>
-<h4 id="elemental-icons"> Elemental Icons </h4>
-<p>Some models are aspected towards one or more of the six elements:</p>
+<p>
+  <img src="./images/cards-profile-front.webp" width="auto" height="auto" alt />
+  <img src="./images/cards-profile-back.webp" width="auto" height="auto" alt />
+</p>
+<ol>
+  <li>
+	<p>
+	  <strong>Name</strong> The name of the model(s). If this card represents a unique individual character rather than one or more generic profiles, this has a special border, and the Rice Cost is coloured Gold.
+	</p>
+  </li>
+  <li>
+	<p>
+	  <strong>Elemental Icons</strong> Some models are aspected towards one or more of the six elements:
+	</p>
+  </li>
+</ol>
 <div class="table-container">
   <table>
-    <thead>
-      <tr>
-        <th>Earth</th>
-        <th>Water</th>
-        <th>Fire</th>
-        <th>Metal</th>
-        <th>Air</th>
-        <th>Void</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>
-          <img src="./images/element-earth.png" width="auto" height="auto" alt />
-        </td>
-        <td>
-          <img src="./images/element-water.png" width="auto" height="auto" alt />
-        </td>
-        <td>
-          <img src="./images/element-fire.png" width="auto" height="auto" alt />
-        </td>
-        <td>
-          <img src="./images/element-metal.png" width="auto" height="auto" alt />
-        </td>
-        <td>
-          <img src="./images/element-wind.png" width="auto" height="auto" alt />
-        </td>
-        <td>
-          <img src="./images/element-void.png" width="auto" height="auto" alt />
-        </td>
-      </tr>
-    </tbody>
+	<thead>
+	  <tr>
+		<th>Earth</th>
+		<th>Water</th>
+		<th>Fire</th>
+		<th>Metal</th>
+		<th>Air</th>
+		<th>Void</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  <tr>
+		<td>
+		  <img src="./images/element-earth.png" width="auto" height="auto" alt />
+		</td>
+		<td>
+		  <img src="./images/element-water.png" width="auto" height="auto" alt />
+		</td>
+		<td>
+		  <img src="./images/element-fire.png" width="auto" height="auto" alt />
+		</td>
+		<td>
+		  <img src="./images/element-metal.png" width="auto" height="auto" alt />
+		</td>
+		<td>
+		  <img src="./images/element-wind.png" width="auto" height="auto" alt />
+		</td>
+		<td>
+		  <img src="./images/element-void.png" width="auto" height="auto" alt />
+		</td>
+	  </tr>
+	</tbody>
   </table>
 </div>
-<h4 id="base-size--max-symbol"> Base Size &amp; Max Symbol </h4>
-<p>If a profile has multiple base size symbols any of the available options are permitted.</p>
-<h4 id="type"> Type </h4>
-<p>The type indicates all the keywords that refer to the model. A model can have multiple types, these are separated by commas, and a model is always all of its types. <br /> The Name and Types of models can often be referred to by other rules. <br /> Traits often have a [Type] that singles out what models the trait affects. This [Type] can also be a model’s name. <br /> Plural words are considered the same type as the same singular word for cards with multiple wound tracks. </p>
-<h4 id="statistics"> Statistics </h4>
-<p>The number is the model’s base statistic value. Some effects modify a statistic, but it can never go above double its base value. <br /> If a statistic is 0, it can be modified to a maximum of 1. <br /> If a “-” icon represents a statistic, then it counts as 0 but cannot be modified by positive or negative modifiers. <br /> Some models may have a Ki boost icon to the side of the Statistic value. <br /> This is the Statistic’s Boost cost. This is the cost in Ki Tokens to increase the Statistic by 1. <br /> Boosts remain only for the current Test or Movement. A player may increase a Statistic multiple times (to a maximum of double its base Statistic), as long as there are Ki Tokens available to do so. <br /> Boosts are considered Ki Feats. </p>
-<h5 id="melee-pool-statistic"> Melee Pool Statistic </h5>
-<p>This is the number of dice the model uses when resolving an Opposed Melee test.</p>
-<h5 id="ranged-pool-statistic"> Ranged Pool Statistic </h5>
-<p>This is the number of dice the model uses when resolving a Ranged Attack.</p>
-<div class="callout">
-<div class="callout-title">
-  <div class="callout-icon"></div>
-  <div class="callout-title-inner">
-    <p>NOTE</p>
+<ol start="3">
+  <li>
+	<p>
+	  <strong>Base Size &amp; Max Symbol</strong> If a profile has multiple base size symbols any of the available options are permitted.
+	</p>
+  </li>
+  <li>
+	<p>
+	  <strong>Type</strong> The type indicates all the keywords that refer to the model. A model can have multiple types, these are separated by commas, and a model is always all of its types. <br /> The Name and Types of models can often be referred to by other rules. <br /> Traits often have a [Type] that singles out what models the trait affects. This [Type] can also be a model’s name. <br /> Plural words are considered the same type as the same singular word for cards with multiple wound tracks.
+	</p>
+  </li>
+  <li>
+	<p>
+	  <strong>Statistics</strong> The number is the model’s base statistic value. Some effects modify a statistic, but it can never go above double its base value. <br /> If a statistic is 0, it can be modified to a maximum of 1. <br /> If a “-” icon represents a statistic, then it counts as 0 but cannot be modified by positive or negative modifiers. <br /> Some models may have a Ki boost icon to the side of the Statistic value. <br /> This is the Statistic’s Boost cost. This is the cost in Ki Tokens to increase the Statistic by 1. <br /> Boosts remain only for the current Test or Movement. A player may increase a Statistic multiple times (to a maximum of double its base Statistic), as long as there are Ki Tokens available to do so. <br /> Boosts are considered Ki Feats.
+	</p>
+  </li>
+</ol>
+<p>
+  <img src="./images/cards-weapon_grids.webp" width="auto" height="auto" alt />
+</p>
+<p>5a. Melee Pool Statistic This is the number of dice the model uses when resolving an Opposed Melee test.</p>
+<p>5b. Ranged Pool Statistic This is the number of dice the model uses when resolving a Ranged Attack.</p>
+<blockquote class="callout note" data-callout="note">
+  <div class="callout-title">
+	<div class="callout-icon"></div>
+	<div class="callout-title-inner">
+	  <p>NOTE</p>
+	</div>
   </div>
-</div>
-</div>
-<p>Many models will have some Ranged pool statistic even if they do not have a ranged weapon. Perhaps they can be bought a ranged weapon or use the ability in some other way. </p>
-<h5 id="move-statistic"> Move Statistic </h5>
-<p>The distance the model can move in inches when it makes a movement that specifies this distance. Also, the number of dice rolled for a Move Test.</p>
-<h5 id="ki-statisticmaximum-ki-limit"> Ki Statistic/Maximum Ki Limit </h5>
-<p>The Ki statistic is actually 2 statistics represented by 2 numbers written X/Y. <br /> The X number is the model’s Ki statistic. This tells you the amount of Ki Tokens each model represented by this card generates during the Starting Phase and the number of dice it uses for Opposed and Challenge Ki tests. <br /> The second Y number is the model’s Ki Limit, the maximum number of Ki Tokens each model represented by this card can have at any one time. If it would gain more than this, any excess is discarded. </p>
-<h4 id="wounds-track"> Wounds Track </h4>
-<p>The number of wounds a model can suffer. When a model suffers wounds an equal amount are marked from its Wound Track. <br /> When a model is reduced to 0 wounds remaining on its Wound Track it is Killed; remove the model from the table. <br /> When a model Heals wounds, it recovers marked wounds from its Wound Track. <br /> A model cannot Heal more than it has marked wounds. </p>
+  <p>Many models will have some Ranged pool statistic even if they do not have a ranged weapon. Perhaps they can be bought a ranged weapon or use the ability in some other way.</p>
+</blockquote>
+<p>5c. Move Statistic The distance the model can move in inches when it makes a movement that specifies this distance. Also, the number of dice rolled for a Move Test.</p>
+<p>5d. Ki Statistic/Maximum Ki Limit The Ki statistic is actually 2 statistics represented by 2 numbers written X/Y. <br /> The X number is the model’s Ki statistic. This tells you the amount of Ki Tokens each model represented by this card generates during the Starting Phase and the number of dice it uses for Opposed and Challenge Ki tests. <br /> The second Y number is the model’s Ki Limit, the maximum number of Ki Tokens each model represented by this card can have at any one time. If it would gain more than this, any excess is discarded. </p>
+<ol start="6">
+  <li>Wounds Track The number of wounds a model can suffer. When a model suffers wounds an equal amount are marked from its Wound Track. <br /> When a model is reduced to 0 wounds remaining on its Wound Track it is Killed; remove the model from the table. <br /> When a model Heals wounds, it recovers marked wounds from its Wound Track. <br /> A model cannot Heal more than it has marked wounds. </li>
+</ol>
 <p>Some cards have multiple Wound Tracks to use for multiple identical models. The number of Wound Tracks is the limit to how many of these models you may recruit in a Warband.</p>
 <p>Some Profile Cards, such as Kami models, have a Max symbol on the back next to their Size. These Profile cards are usually ones that have no wound tracks. <br /> Whenever a rule refers to the number of Wound Tracks use the Max number instead if the card has one. You can recruit up to this number of these models into a Warband. </p>
-<h4 id="traits"> Traits </h4>
-<p>Each model may have several traits that describe how it behaves in the game. This makes those traits easier to find when you need them. <br /> Some Traits are Weapon Traits; these are listed on the model’s weapon grid and are only in effect when using that weapon. </p>
-<div class="callout">
-<div class="callout-title">
-  <div class="callout-icon"></div>
-  <div class="callout-title-inner">
-    <p>Traits Reminder Text </p>
-  </div>
-</div>
-</div>
-<p>Starter set cards have reminder text for all their traits. Remember this is just a reminder of the rule; the full version is in this rulebook, always look up the complete rules text if there is an issue mid game for clarification. </p>
-<h4 id="ki-feats"> Ki Feats </h4>
-<p>Ki Feats available to the model(s).</p>
-<h4 id="melee-and-ranged-weapon-grids"> Melee and Ranged Weapon Grids </h4>
-<p>All models in Bushido have a melee weapon, though for any they are fists and feet or claws and teeth. Some also have a ranged weapon. <br /> The weapon grid also lists any weapon traits that are in effect when using that weapon, as well as any special attacks and defences that are available when using that weapon: </p>
-<ol>
-  <li> Designates the weapon as either a Melee or Ranged Attack weapon. Ranged Weapons have Range Bands. <ul>
-      <li>Short Range (first value): Ranged Attacks against Targets up to and including this distance are at Short Range.</li>
-      <li>Medium Range (second value): Ranged Attacks against Targets beyond Short Range and up to and including this distance are at Medium Range.</li>
-      <li>Long Range (third value): Ranged Attacks against Targets beyond Medium Range and up to and including this distance are at Long Range.</li>
-      <li>Ranged Attacks against Targets at distances exceeding the weapon’s Long Range automatically fail.</li>
-    </ul>
-  </li>
-  <li>A weapon’s Strength modifier to any Damage Rolls made by this weapon. <strong>Sp</strong> Indicates a special effect instead of a standard damage roll The attack does no damage, some of these weapons have properties detailed in the Unique Effects section of the model’s profile card. </li>
-  <li>Any Traits associated with the weapon.</li>
-  <li>Any Special Abilities available when using that weapon.</li>
+<ol start="7">
+  <li>Traits Each model may have several traits that describe how it behaves in the game. This makes those traits easier to find when you need them. <br /> Some Traits are Weapon Traits; these are listed on the model’s weapon grid and are only in effect when using that weapon. </li>
 </ol>
-<h4 id="faction-symbol"> Faction Symbol </h4>
-<p>Which Faction the model belongs to. Some models are from the Ronin pseudo-Faction. <br /> Your Warband can only recruit models that belong to your chosen Faction, or Ronin models recruitable by your chosen faction as indicated on the Ronin model’s card. </p>
-<h4 id="unique-effects"> Unique Effects </h4>
-<p>Any additional rules that are not Traits or Ki Feats.</p>
-<h4 id="rice-cost"> Rice Cost </h4>
-<p>The cost to recruit this model into your Warband.</p>
+<blockquote class="callout note" data-callout="note">
+  <div class="callout-title">
+	<div class="callout-icon"></div>
+	<div class="callout-title-inner">
+	  <p>Traits Reminder Text </p>
+	</div>
+  </div>
+  <p>Starter set cards have reminder text for all their traits. Remember this is just a reminder of the rule; the full version is in this rulebook, always look up the complete rules text if there is an issue mid game for clarification.</p>
+</blockquote>
+<ol start="8">
+  <li>
+	<p>Ki Feats Ki Feats available to the model(s).</p>
+  </li>
+  <li>
+	<p>Melee and Ranged Weapon Grids All models in Bushido have a melee weapon, though for any they are fists and feet or claws and teeth. Some also have a ranged weapon. <br /> The weapon grid also lists any weapon traits that are in effect when using that weapon, as well as any special attacks and defences that are available when using that weapon: a. Designates the weapon as either a Melee or Ranged Attack weapon. Ranged Weapons have Range Bands. </p>
+	<ul>
+	  <li>Short Range (first value): Ranged Attacks against Targets up to and including this distance are at Short Range.</li>
+	  <li>Medium Range (second value): Ranged Attacks against Targets beyond Short Range and up to and including this distance are at Medium Range.</li>
+	  <li>Long Range (third value): Ranged Attacks against Targets beyond Medium Range and up to and including this distance are at Long Range.</li>
+	  <li>Ranged Attacks against Targets at distances exceeding the weapon’s Long Range automatically fail. b. A weapon’s Strength modifier to any Damage Rolls made by this weapon. <strong>Sp</strong> Indicates a special effect instead of a standard damage roll The attack does no damage, some of these weapons have properties detailed in the Unique Effects section of the model’s profile card. c. Any Traits associated with the weapon. d. Any Special Abilities available when using that weapon. </li>
+	</ul>
+  </li>
+  <li>
+	<p>Faction Symbol Which Faction the model belongs to. Some models are from the Ronin pseudo-Faction. <br /> Your Warband can only recruit models that belong to your chosen Faction, or Ronin models recruitable by your chosen faction as indicated on the Ronin model’s card. </p>
+  </li>
+  <li>
+	<p>Unique Effects Any additional rules that are not Traits or Ki Feats.</p>
+  </li>
+  <li>
+	<p>Rice Cost The cost to recruit this model into your Warband.</p>
+  </li>
+</ol>
 <p>Models with <strong>Su</strong> are Summoned models that enter play during the game through a Ki Feat or Unique Effect and cannot be recruited when creating your Warband. </p>
 <p>Models with <strong>Sp</strong> are models with a special rule which will be explained on its profile card and cannot be recruited when creating your Warband. <br /> If a card’s Rice Cost is followed with <strong>ea</strong>, then more than one model represented by that card may be recruited into your Warband. Each model recruited pays the cost specified. <br /> If a model’s Rice Cost is increased or decreased by a Theme list or other rule, the original printed Rice Cost is still used for all game effects relying on the Model’s Rice Cost. </p>
-<h3 id="special-cards"> Special Cards </h3>
+<h1 id="special-cards">Special Cards <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#special-cards" class="internal">
+	<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+	  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+	</svg>
+  </a>
+</h1>
 <p>Faction decks include special cards specific to each faction, with a Ronin set of special cards available to all. <br /> Each card can be recruited X times per Warband based on its Max (X) trait. <br /> If a card has no printed Max (X) trait, it is assumed to be Max (1). </p>
 <p>There are three types of Special cards that players can recruit when creating their Warband - Enhancements, Events, and Terrain. Each type acts differently in how and what they affect during the game. These are explained in detail below, but all special cards are comprised of the following features:</p>
 <ul>
   <li>
-    <strong>Name:</strong> The card’s name.
+	<strong>Name:</strong> The card’s name.
   </li>
   <li>
-    <strong>Faction:</strong> Special cards may only be purchased if they have the same Faction symbol as the Warband, or the Ronin Faction symbol.
+	<strong>Faction:</strong> Special cards may only be purchased if they have the same Faction symbol as the Warband, or the Ronin Faction symbol.
   </li>
   <li>
-    <strong>Type:</strong> This specifies if it is an Event, Enhancement or Terrain card.
+	<strong>Type:</strong> This specifies if it is an Event, Enhancement or Terrain card.
   </li>
   <li>
-    <strong>Description:</strong> Describes the card’s effects.
+	<strong>Description:</strong> Describes the card’s effects.
   </li>
   <li>
-    <strong>Traits:</strong> Traits that apply to that card.
+	<strong>Traits:</strong> Traits that apply to that card.
   </li>
   <li>
-    <strong>Rice Cost:</strong> The cost to recruit the card for the Warband. If the cost is variable its X value is chosen and locked at Warband Creation. Costs cannot be modified below 1 Rice.
+	<strong>Rice Cost:</strong> The cost to recruit the card for the Warband. If the cost is variable its X value is chosen and locked at Warband Creation. Costs cannot be modified below 1 Rice.
   </li>
 </ul>
 <p>Some cards say to Discard the card after a specific trigger happens. A Discarded Special card has no effect on the game from that point onward.</p>
-<h4 id="enhancement-cards"> Enhancement Cards </h4>
+<h4 id="enhancement-cards">Enhancement Cards <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#enhancement-cards" class="internal">
+	<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+	  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+	</svg>
+  </a>
+</h4>
 <p>The player must decide which profile card an Enhancement card is Attached to during the creation of their Warband. During play, place an Attached Enhancement card under the chosen profile card. The model(s) will benefit from the effects detailed on the card for as long as it is Attached to the model(s)’ profile card.</p>
+<p>
+  <img src="./images/cards-enhancement_equipment.webp" width="auto" height="auto" alt />
+</p>
 <p>Models with the Insignificant trait cannot have Enhancement cards Attached to their profile cards during Warband creation. Animal, Construct, Kami and Swarm models may only have Enhancement cards that specifically name them as Required.</p>
 <p>Some models have multiple profile cards. If a card says X and Y are considered the same model when creating a Warband, then any Enhancement cards bought for either card are moved to the one starting in play before the game.</p>
 <p>Some cards represent multiple models and have multiple wound tracks. Enhancement cards will specify if they can be bought for such models multiple times or can only be bought for a single model on the card. In the case of enhancements applied to a single model on a card representing multiple models, the enhanced model must be distinguishable from otherwise identical models without the enhancement.</p>
@@ -211,76 +504,110 @@
 </p>
 <ul>
   <li>
-    <strong>Equipment:</strong> This represents a physical item. A model may have only one Equipment card attached to it.
+	<strong>Equipment:</strong> This represents a physical item. A model may have only one Equipment card attached to it.
   </li>
   <li>
-    <strong>Max (X):</strong> This card can be purchased for a Warband up to X times.
+	<strong>Max (X):</strong> This card can be purchased for a Warband up to X times.
   </li>
   <li>
-    <strong>Requirement [Type]:</strong> This card can only be Attached to this type of model.
+	<strong>Requirement [Type]:</strong> This card can only be Attached to this type of model.
   </li>
   <li>
-    <strong>Exclusion [Type]:</strong> This card cannot be Attached to this type of model.
+	<strong>Exclusion [Type]:</strong> This card cannot be Attached to this type of model.
   </li>
+  <li></li>
 </ul>
-<h4 id="event-cards"> Event Cards </h4>
-<p>Event cards are played once, at a time detailed on the card. Once the card is resolved, then it is discarded and removed from the game. <br /> Unless stated otherwise Event Cards are used in the same way as Instant Ki Feats. They are not, however, considered to be Ki Feats. <br /> Some event cards may result in another special card being put into play, often as a result of some action on the table. In these cases, the other special card will be printed on the reverse side of the Event card and can only be recruited in this way. </p>
+<h4 id="event-cards">Event Cards <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#event-cards" class="internal">
+	<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+	  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+	</svg>
+  </a>
+</h4>
+<p>Event cards are played once, at a time detailed on the card. Once the card is resolved, then it is discarded and removed from the game.</p>
+<p>
+  <img src="./images/cards-event.webp" width="auto" height="auto" alt />
+</p>
+<p>Unless stated otherwise Event Cards are used in the same way as Instant Ki Feats. They are not, however, considered to be Ki Feats. <br /> Some event cards may result in another special card being put into play, often as a result of some action on the table. In these cases, the other special card will be printed on the reverse side of the Event card and can only be recruited in this way. </p>
 <p>
   <strong>Event Card Traits:</strong>
 </p>
 <ul>
   <li>
-    <strong>Max (X):</strong> This card can be purchased for a Warband up to X times.
+	<strong>Max (X):</strong> This card can be purchased for a Warband up to X times.
   </li>
   <li>
-    <strong>Requirement [Type]:</strong> This card is restricted in how it can be played or recruited and requires a [Type] of model or specifies another restriction.
+	<strong>Requirement [Type]:</strong> This card is restricted in how it can be played or recruited and requires a [Type] of model or specifies another restriction.
   </li>
+  <li></li>
 </ul>
-<h4 id="terrain-cards"> Terrain Cards </h4>
+<h4 id="terrain-cards">Terrain Cards <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#terrain-cards" class="internal">
+	<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+	  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+	</svg>
+  </a>
+</h4>
 <p>Terrain cards allow a player to deploy a specified Terrain element on the table during the player’s normal Deployment of their Warband.</p>
+<p>
+  <img src="./images/cards-terrain.webp" width="auto" height="auto" alt />
+</p>
 <p>Terrain elements deployed due to Terrain cards must follow standard rules for Terrain element deployment unless stated on the card.</p>
 <p>If restrictions mean that the terrain cannot be deployed, the opposing player must make as small an alteration as possible to allow the bought terrain to be placed.</p>
 <p>
-  <strong>Terrain Card Traits:</strong>
+  <h5>Terrain Card Traits:</h5>
 </p>
-<h5>Destructible</h5>
-<p>A model in BtB with this terrain and not in an Enemy ZoC can declare a Wait Action and spend 2 Ki to remove it from the table.</p>
-
-<p>Requirement [Type]: This card is restricted in how it can be played or recruited and requires a [Type] model. <br /> For Passage, Visibility and Size traits see Terrain. </p>
-<h4 id="communal-cards"> Communal Cards </h4>
+<p><strong>Destructible:</strong> A model in BtB with this terrain and not in an Enemy ZoC can declare a Wait Action and spend 2 Ki to remove it from the table.</p>
+<p><strong>Requirement [Type]:</strong> This card is restricted in how it can be played or recruited and requires a [Type] model. <br /> For Passage, Visibility and Size traits see Terrain. </p>
+<h4 id="communal-cards">Communal Cards <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#communal-cards" class="internal">
+	<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+	  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+	</svg>
+  </a>
+</h4>
 <p>Some factions have access to a Communal Card. These cost no Rice and can always be recruited. You may only recruit one Communal Card with the same name.</p>
-<div class="callout">
-<div class="callout-title">
-  <div class="callout-icon"></div>
-  <div class="callout-title-inner">
-    <p>Example</p>
+<blockquote class="callout example" data-callout="example">
+  <div class="callout-title">
+	<div class="callout-icon"></div>
+	<div class="callout-title-inner">
+	  <p>Example</p>
+	</div>
   </div>
-</div>
-</div>
-<p>A warband has recruited Bakemono Horde “Out of the Underworld” so it may not recruit the Bakemono Horde “The Shadow Council” communal card.</p>
+  <p>A warband has recruited Bakemono Horde “Out of the Underworld” so it may not recruit the Bakemono Horde “The Shadow Council” communal card.</p>
+</blockquote>
 <p>Some Communal Cards are used to pool together all the Ki generated by their community profiles. If this is the case, all community profiles will have a maximum Ki listed as *.</p>
 <p>Such models never have Ki, effects that would gain them Ki, including Channel, Leech, Ki Generation, the Focus Action or any Ki Feats or other effects instead add Ki to the communal card.</p>
 <p>Communal Profiles with a * for maximum Ki are not subject to abilities that remove Ki from them. For example, they cannot be Leeched from and the Psychic Drain Ki Feat has no effect. <br /> Some Communal Cards may grant other abilities, similar to Unique Effects on a profile card. Some Communal Cards add new feats to the community profiles. Always read these as if they were printed on the profile card. </p>
-<h4 id="theme-list-cards"> Theme List Cards </h4>
+<h4 id="theme-list-cards">Theme List Cards <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#theme-list-cards" class="internal">
+	<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+	  <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+	  <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+	</svg>
+  </a>
+</h4>
 <p>A player can only use one Theme per Warband. Themed lists allow you to trade restrictions in Warband composition for other bonuses during gameplay. Unless otherwise stated, Theme benefits only affect Friendly models.</p>
-<div class="callout">
-<div class="callout-title">
-  <div class="callout-icon"></div>
-  <div class="callout-title-inner">
-    <p>Example</p>
+<p>
+  <img src="./images/cards-themes.webp" width="auto" height="auto" alt />
+</p>
+<blockquote class="callout example" data-callout="example">
+  <div class="callout-title">
+	<div class="callout-icon"></div>
+	<div class="callout-title-inner">
+	  <p>Example</p>
+	</div>
   </div>
-</div>
-</div>
-<p>Aiko is recruited into the Righteous Warriors Theme, Silverback can now be recruited even though animals, gorillas and Silverback are not listed in the Permitted models.</p>
+  <p>Aiko is recruited into the Righteous Warriors Theme, Silverback can now be recruited even though animals, gorillas and Silverback are not listed in the Permitted models.</p>
+</blockquote>
 <p>
   <strong>Theme Card Traits:</strong>
 </p>
 <ul>
   <li>
-    <strong>Permitted (Type):</strong> Only models with a matching type can be recruited into this Warband, Ronin models of the type may only be included if the theme states Ronin of that type are permitted. If a Theme list card does not have this trait, all models from the chosen Faction are available to recruit into the theme. If a Ronin Theme list card does not have this trait, all models from the chosen Faction and all Ronin available to that Faction are available to recruit into the theme.
+	<strong>Permitted (Type):</strong> Only models with a matching type can be recruited into this Warband, Ronin models of the type may only be included if the theme states Ronin of that type are permitted. If a Theme list card does not have this trait, all models from the chosen Faction are available to recruit into the theme. If a Ronin Theme list card does not have this trait, all models from the chosen Faction and all Ronin available to that Faction are available to recruit into the theme.
   </li>
   <li>
-    <strong>Exclusion (Type):</strong> Models with a matching type cannot be recruited into this Warband. If a profile qualifies for both the Permitted and Exclusion of a theme, the Exclusion takes priority, and the model may not be recruited. Some models or special cards, when recruited into a Warband, permit other models to be recruited. Other models may require a specific model to be recruited into the Warband before they can be included. If a model is permitted in a Theme then any model it allows to be recruited is also allowed in the theme regardless of any Exclusion. If a model or special card is permitted in a theme list, any model summoned by that model is also allowed to be summoned.
+	<strong>Exclusion (Type):</strong> Models with a matching type cannot be recruited into this Warband. If a profile qualifies for both the Permitted and Exclusion of a theme, the Exclusion takes priority, and the model may not be recruited. Some models or special cards, when recruited into a Warband, permit other models to be recruited. Other models may require a specific model to be recruited into the Warband before they can be included. If a model is permitted in a Theme then any model it allows to be recruited is also allowed in the theme regardless of any Exclusion. If a model or special card is permitted in a theme list, any model summoned by that model is also allowed to be summoned.
   </li>
 </ul>
 
@@ -2321,75 +2648,134 @@
 
 <h1>FAQs</h1>
 <p>
-  <strong>Q: Are “Required” and Requirement” the same thing on Special Cards?</strong> A: Yes these mean the same thing.
+  <strong>Q: Are “Required” and Requirement” the same thing on Special Cards?</strong>
+  <br /> A: Yes these mean the same thing.
 </p>
 <p>
-  <strong>Q: When an enemy model is surprising one of my models, when exactly does it become surprised? When is the last time I could use a Ki Feat?</strong> A: As soon as a model’s action is declared (as long as it will bring the model into BtB or qualifies for surprise under the relevant rules), the target/chosen model should be considered Surprised and their Ki feat window closed. The last time you can use a Ki Feat is before the declaration of the action. It is perfectly acceptable for the active player to say “I am going to declare an action, do you want to use a Ki Feat before I do?” to prevent any timing issues.
+  <strong>Q: When an enemy model is surprising one of my models, when exactly does it become surprised? When is the last time I could use a Ki Feat?</strong>
+  <br /> A: As soon as a model’s action is declared (as long as it will bring the model into BtB or qualifies for surprise under the relevant rules), the target/chosen model should be considered Surprised and their Ki feat window closed. <br /> The last time you can use a Ki Feat is before the declaration of the action. It is perfectly acceptable for the active player to say “I am going to declare an action, do you want to use a Ki Feat before I do?” to prevent any timing issues.
 </p>
 <p>
-  <strong>Q: Do passive unique effects continue on models that are removed from play?</strong> A: Passive abilities only work while the model is in play.
+  <strong>Q: Do passive unique effects continue on models that are removed from play?</strong>
+  <br /> A: Passive abilities only work while the model is in play.
 </p>
 <p>
-  <strong>Q: Are Melee Exchange tiebreak for most dice rolled by attack/ defence or all dice together?</strong> A: All dice.
+  <strong>Q: Are Melee Exchange tiebreak for most dice rolled by attack/ defence or all dice together?</strong>
+  <br /> A: All dice.
 </p>
 <p>
-  <strong>Q: At the start of a Melee Exchange both models turn to face, is this considered movement?</strong> A: No
+  <strong>Q: At the start of a Melee Exchange both models turn to face, is this considered movement?</strong>
+  <br /> A: No
 </p>
 <p>
-  <strong>Q: How does the Believer trait work with feats that cost X?</strong> A: When declaring the use of the feat, declare what X will be then use X-1 to determine the cost of the feat. Gain the benefit of the feat at X as written.
+  <strong>Q: How does the Believer trait work with feats that cost X?</strong>
+  <br /> A: When declaring the use of the feat, declare what X will be then use X-1 to determine the cost of the feat. Gain the benefit of the feat at X as written.
 </p>
 <p>
-  <strong>Q: What happens if I use the Curse Fate feat while the Balance event has been played?</strong> A: The dice cannot be re-rolled so remove any duplicates, those are lost.
+  <strong>Q: What happens if I use the Curse Fate feat while the Balance event has been played?</strong>
+  <br /> A: The dice cannot be re-rolled so remove any duplicates, those are lost.
 </p>
 <p>
-  <strong>Q: For the feats Hold the Line, Pile On!, and Sister’s Succour what does “Attempt to reach BtB” mean?</strong> A: If a model cannot reach BtB with the enemy model, this feat cannot be used.
+  <strong>Q: For the feats Hold the Line, Pile On!, and Sister’s Succour what does “Attempt to reach BtB” mean?</strong>
+  <br /> A: If a model cannot reach BtB with the enemy model, this feat cannot be used.
 </p>
 <p>
-  <strong>Q: What happens to Activation Counters if I gain the Flank trait mid game?</strong> A: When a model is “Deployed” it has no Activation counters. Flank will add two as usual.
+  <strong>Q: What happens to Activation Counters if I gain the Flank trait mid game?</strong>
+  <br /> A: When a model is “Deployed” it has no Activation counters. Flank will add two as usual.
 </p>
 <p>
-  <strong>Q: Do multiple instances of Co-ordinated Attack stack?</strong> A: Yes, the modifier is given as +1 so they stack as long as the Co-ordinated Attack traits are all satisfied. Multiple models do not trigger the benefit from one Co-ordinated Attack multiple times.
+  <strong>Q: Do multiple instances of Co-ordinated Attack stack?</strong>
+  <br /> A: Yes, the modifier is given as +1 so they stack as long as the Co-ordinated Attack traits are all satisfied. Multiple models do not trigger the benefit from one Co-ordinated Attack multiple times.
 </p>
 <p>
-  <strong>Q: How do Rise and Last Stand on the same model work?</strong> A: When your model gets reduced to 0 wounds, you can choose which trait to activate first.
+  <strong>Q: How do Rise and Last Stand on the same model work?</strong>
+  <br /> A: When your model gets reduced to 0 wounds, you can choose which trait to activate first.
 </p>
 <ul>
   <li>If you succeed at the Rise test at this point, your health is reset and Last Stand cannot be activated. If you fail, then feel free to activate Last Stand.</li>
   <li>If you trigger Last Stand first, the Rise will have no effect (Last Stand prevents healing/wound recovery/any way to get wounds back). The mechanics of this means that yes, you could roll the Rise test after declaring Last Stand, but if you succeed, you remain at 0 wounds - so you die (again).</li>
 </ul>
 <p>
-  <strong>Q: Does a model using the Deadeye feat ignore Camouflage?</strong> A: Yes, since a model must be “Benefitting” from Cover to gain Camouflage if a model ignores Cover (Or ignores Cover modifiers) it will ignore Camouflage.
+  <strong>Q: Does a model using the Deadeye feat ignore Camouflage?</strong>
+  <br /> A: Yes, since a model must be “Benefitting” from Cover to gain Camouflage if a model ignores Cover (Or ignores Cover modifiers) it will ignore Camouflage.
 </p>
 <p>
-  <strong>Q: What happens if two (or more) models in a Warband are affected by Fog of Hesitation?</strong> A: Once all other models have used their Activation Counters, the affected models may activate as normal.
+  <strong>Q: What happens if two (or more) models in a Warband are affected by Fog of Hesitation?</strong>
+  <br /> A: Once all other models have used their Activation Counters, the affected models may activate as normal.
 </p>
 <p>
-  <strong>Q: What happens if a model with Flank cannot Deploy on the Flank turn?</strong> A: They stay Elsewhere until some other trait or effect can bring them back to the board.
+  <strong>Q: What happens if a model with Flank cannot Deploy on the Flank turn?</strong>
+  <br /> A: They stay Elsewhere until some other trait or effect can bring them back to the board.
 </p>
 <p>
-  <strong>Q: If I used War Weary and then deploy a model with Flank on the same turn, do they get 2 Activation Counters?</strong> A: No, War Weary states its duration: “In the first turn”, so models coming in with Flank will still only get a single Activation Counter.
+  <strong>Q: If I used War Weary and then deploy a model with Flank on the same turn, do they get 2 Activation Counters?</strong>
+  <br /> A: No, War Weary states its duration: “In the first turn”, so models coming in with Flank will still only get a single Activation Counter.
 </p>
 <p>
-  <strong>Q: Can a Kami spend Ki Tokens to reduce itself to 0 Ki?</strong> A: No.
+  <strong>Q: Can a Kami spend Ki Tokens to reduce itself to 0 Ki?</strong>
+  <br /> A: No.
 </p>
 <p>
-  <strong>Q: How does Assassin work in conjunction with Strong or Weak?</strong> A: Assassin trumps either trait. Technically the player would choose which trait to resolve first, but there is no reason not to choose Assassin if able as the quantity of damage dice is specified and would not change due to the addition of Strong or Weak.
+  <strong>Q: How does Assassin work in conjunction with Strong or Weak?</strong>
+  <br /> A: Assassin trumps either trait. Technically the player would choose which trait to resolve first, but there is no reason not to choose Assassin if able as the quantity of damage dice is specified and would not change due to the addition of Strong or Weak.
 </p>
-<p>**Q: Can you declare a Charge where only the movement over Ideal terrain in the charge path will give you enough movement to reach the charge target? ** A: Yes. </p>
 <p>
-  <strong>Q: Do I have to roll any dice to take advantage of Brutal/Parry/Resistance?</strong> A: Yes. Similarly if all dice roll 1s, you cannot benefit from these traits.
+  <strong>Q: Can you declare a Charge where only the movement over Ideal terrain in the charge path will give you enough movement to reach the charge target?</strong>
+  <br /> A: Yes.
 </p>
-<div class="callout">
-<div class="callout-title">
-  <div class="callout-icon"></div>
-  <div class="callout-title-inner">
-    <p>NOTE</p>
+<p>
+  <strong>Q: Do I have to roll any dice to take advantage of Brutal/Parry/Resistance?</strong>
+  <br /> A: Yes. Similarly if all dice roll 1s, you cannot benefit from these traits.
+</p>
+<blockquote class="callout note" data-callout="note">
+  <div class="callout-title">
+    <div class="callout-icon"></div>
+    <div class="callout-title-inner">
+      <p>NOTE</p>
+    </div>
   </div>
-</div>
-</div>
-<p>Previously this was different for each trait; this should be simpler overall.</p>
-<h3 id="further-clarifications"> Further Clarifications: </h3>
-<p>Intercepting Ranged Attacks [Step 1 d) i) of the Ranged Sequence] uses “Line”, not “LoS”. No facing away to not allow the opponent to intercept</p>
+  <p>Previously this was different for each trait; this should be simpler overall.</p>
+</blockquote>
+<p>
+  <strong>Q: When a model is reduced to 0 Wounds but has Rise, Last Stand or anything else keeping it on the table, do effects triggering by the killed keyword still trigger?</strong>
+  <br /> A: Yes. Active player chooses the order of operations. This can mean that e.g. the D&amp;D theme replaces a model with Last Stand before it can trigger!
+</p>
+<p>
+  <strong>Q: Do Unique Effects that trigger on taking damage apply even if the model is removed from play before they could usually trigger (e.g. Kami of the Evening Flame)?</strong>
+  <br /> A: Yes, it is intended that they apply. They trigger during step 12a of the Melee Sequence and thus apply after the Melee Exchange, even if the model is removed from play at that time already.
+</p>
+<p>
+  <strong>Q: Flame on Ki Feat sometimes adds Fire (1/2), sometimes Fire (1/1). Should they be the same Feat?</strong>
+  <br /> A: Yes. They will be consolidated in a future errata.
+</p>
+<p>
+  <strong>Q: Can Command or Pack activations “chain activate” other Command or Pack Activations?</strong>
+  <br /> A: No. No chaining.
+</p>
+<p>
+  <strong>Q: Surprised state: Does a model need to be out of LoS starting it’s Activation, or does it only have to be out of LoS starting it’s Movement or Targeting to successfully surprise an enemy model?</strong>
+  <br /> A: Needs to start Activating out of LoS.
+</p>
+<p>
+  <strong>Q: Curse Fate and Destiny’s Fear make rolled dice being considered as “1”. Do these “replaced” dice then get removed by the rules to count as a result of “0”? Does Kata avoid that?</strong>
+  <br /> A: Yes, they count as 0. Kata applies, keeping them as a “1”.
+</p>
+<p>
+  <strong>Q: Can you reach negative Movement values and do they simply count as 0 then?</strong>
+  <br /> A: Yes, negative movement counts as Move 0. To then get back to move 1+, you need to boost for each negative value until you reach a positive number.
+</p>
+<p>
+  <strong>Q: What happens to Tokens, Enhancements, Counters and Markers on a model that is removed from play?</strong>
+  <br /> A: OpT and OpG Boxes stay checked on a model that is removed from play. Enhancements stay equipped on unique models. If a model is being brought back to life by any gameplay effect, this may cause the max. amount of an Enhancement piece being exceeded since that only applies during warband creation. <br /> All Tokens, Markers and Counters are removed from a model that is being removed from play.
+</p>
+<h2 id="further-clarifications">Further Clarifications: <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#further-clarifications" class="internal">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </a>
+</h2>
+<p>Intercepting Ranged Attacks [Step 1 d) i) of the Ranged Sequence] uses “Line”, not “LoS”. No facing away to not allow the opponent to intercept.</p>
 <p>
   <strong>Grapple Attack</strong>: it is intended that it stops the Melee Exchange even against models that are <em>Immune [Held]</em>.
 </p>
@@ -2397,112 +2783,156 @@
 <p>A Kami spending Ki is <em>not</em> considered “taking damage”. </p>
 <p>Cloudwalk/Intangible-models <em>must</em> ignore Terrain (not optional). Uniques apply. </p>
 <hr />
-
-<h3>Ronin</h3>
+<h1>Prefecture of Ryu</h1>
+<p>Trained Dog Aki “teleports” to an Ashigaru that is being Ordered (as intended).</p>
 <p>
-  <strong>Q: Can a Giant Eagle or Eagle of the Jwar Isles use their Unique Effects to go into Flank and then Deploy during the same turn?</strong> A: Yes. The player chooses the order to resolve their Starting Phase effects, so they can choose to use the Unique Effect and then deploy any Flank models for the turn.
+  <strong>Hiro’s “Heir by Blood”:</strong>
+<h1>Temple of Ro-Kan</h1>
+<p>
+  <strong>Q: Are the Temple and Descension Gorinto cards supposed to have different effects?</strong>
+  <br /> A: Yes, in hindsight we should have changed the name on one of them.
 </p>
-<p>Kami of the Morning Dew “may” decide between his two options, although “healing nobody” was an option already, too.</p>
-
-
-<h3>The Awoken</h3>
+<p>
+  <strong>Q: Does Byiba’s Warning Bark give additional Activation Counters to models that have already arrived that turn?</strong>
+  <br /> A: Yes.
+</p>
+<h1>Cult of Yurei</h1>
+<p>
+  <strong>Q: On Umeka’s Feat, Curse of Stinging Needles” Is the -1 in Tough (-1) a modifier or a number?</strong>
+  <br /> A: Modifier. It does stack, including with itself. If we ever have something gain a negative value trait, we’ll word it differently.
+</p>
+<p>
+  <strong>Q: Can I use the Spirit Defence Ritual on a Yuta to get one Ki Feat for free once?</strong>
+  <br /> A: No, the wounds aren’t marked so no benefit is gained.
+</p>
+<p>
+  <strong>Q: For Crush The Oppressed are additional Controlled Markers added or, since more Controlled Markers are added, do they get removed?</strong>
+  <br /> A: Control Markers are not added, they are doubled so you will end up with twice as many, not all cancelled out.
+</p>
+<p>
+  <strong>Q: Can Warui recruit Kami even if the Theme doesn’t allow them? Does it allow non-Cult Kami?</strong>
+  <br /> A: The Theme restrictions are during Warband Creation, this ability allows any Cult of Yurei Faction Kami or any Ronin Kami that has the Cult of Yurei Faction Symbol.
+</p>
+<h1>The Savage Wave</h1>
+<p>
+  <strong>Q: Does the Kaihei Alpha’s unique effect apply when he is recruited, but not on the table anymore?</strong>
+  <br /> A: It works when he is in play, but not if he’s removed from play!
+</p>
+<h1>Ito Clan</h1>
+<p>
+  <strong>Q: If using the Serpent’s Coil theme, multiple models take damage due to poison, do my models gain multiple Ki?</strong>
+  <br /> A: This can trigger multiple times granting multiple Ki. Note the models Poisoned do not have to be Enemy models.
+</p>
+<h1>STS</h1>
+<p>
+  <strong>Q: For the Hidden Agenda card for the Silvermoon Trade Syndicate, can you take Ronin event cards?</strong>
+  <br /> A: Yes.
+</p>
+<h1>Descension</h1>
+<p>
+  <strong>Q: Are the Temple and Descension Gorinto cards supposed to have different effects?</strong>
+  <br /> A: Yes, in hindsight we should have changed the name on one of them.
+</p>
+<h1>Jung Pirates</h1>
+<p>
+  <strong>Q: The Knife Enhancement - Equipment card can be used by Crabs but Animals and Swarms cannot have special cards attached. How does this work?</strong>
+  <br /> A: The text allowing the crabs to have the card should reference the Enhancement rule preventing these types from using the card, thus has priority. All types of Crab model may use the knife regardless of Animal/Swarm type.
+</p>
+<h1>KKZ</h1>
+<p>
+  <strong>Q: Can the KKZ Worm ability “Kohai” be used to duplicate feats gained from special cards?</strong>
+  <br /> A: No. You may only duplicate feats physically on the card.
+</p>
+<p>
+  <strong>Q: Can the Skirmish Mission theme allow me to exceed the Max value of Enhancements or Terrain special cards?</strong>
+  <br /> A: No. While this is technically after the warband recruitment, restrictions will still apply.
+</p>
+<p>
+  <strong>Q: Can Axiam use Special Attacks gained from his Unique Effect on Ranged Weapons.</strong>
+  <br /> A: No.
+</p>
+<p>
+  <strong>Q: Phantom’s and Spectre’s ability to Summon the other of the pair and replace themselves with the Summoned one has different wording, is this correct?</strong>
+  <br /> A: Yes, this is correct. If you recruited Phantom (either alone or together with Spectre), Spectre cannot Summon Phantom. Phantom can always Summon Spectre if Spectre is not yet or no longer in play. Their ability to swap places on the battlefield is not affected by this.
+</p>
+<p>
+  <strong>Q: If Phantom or Spectre Summon the other of the pair, how much health does the Summoned model have?</strong>
+  <br /> A: They have exactly as much health as they had the last time they were in play in this match. If they haven’t yet been in play or have been killed previously, they appear with full health. Using this swap does not heal or add damage to the wound track.
+</p>
+<p>
+  <strong>Q: How are Activation Counters actually handled when Phantom or Spectre Summon the other of the pair?</strong>
+  <br /> A: Removing the Summoning model from play ends their activation and they lose an Activation Counter. The Summoned model then receives the remaining Activation Counters. The Summoned model does not immediately activate. Effectively, the Summoning was the complete activation. Their ability to swap places on the battlefield is not affected by this, the active model remains active and continues their activation.
+</p>
+<p>
+  <strong>Q: Who is the origin for the Damage Roll from Spectre’s unique effect?</strong>
+  <br /> A: Spectre is the origin for this damage roll, so Spectre’s weapon, modifiers and Traits apply to this damage roll.
+</p>
+<p>
+  <strong>Q: State Markers are not transferred over when Phantom or Spectre Summon the other of the pair, what happens to these Markers?</strong>
+  <br /> A: Models that are not in play cannot have Markers, so all Markers are removed if the model leaves play.
+</p>
+<p>
+  <strong>Q: Sude: Does he become visible starting his Activation for a brief moment in time before re-entering invisibility with his unique effect?</strong>
+  <br /> A: The Ninja player can choose the order of operations, so he can decide to first become invisible and then let the former invisibility end, meaning he stays invisible.
+</p>
+<h1>Shiho Clan</h1>
+<p>
+  <strong>Q: Will Unfurled Wing trigger if I put an Eagle of the Jwar Isles / Giant Eagle Elsewhere and Deploy it on the same turn?</strong>
+  <br /> A: No. If no models are going to be Deployed from Elsewhere via Flank at the time of the Tactical Test, then Unfurled Wing will not trigger.
+</p>
+<h1>Kinshi Temple</h1>
+<p>
+  <strong>Q: What existing Ronin profiles are available to the faction?</strong>
+  <br /> A: In addition to Ronin with the Kinshi Faction symbol on the back of their card, Tenbatsu, Kami of Blighted Earth, and Kami of Choking Fog are available to the Kinshi Temple Faction.
+</p>
+<p>
+  <strong>Q: Do effects that increase the cost of Ki Feats work (such as Disturb Flow trait or the Tax Ki Feat) on the Kinshi Temple Ki Feats?</strong>
+  <br /> A: No. They use these feats at no cost.
+</p>
+<h1>The Awoken</h1>
 <p>
   <strong>Webbed Victims:</strong> Ki generation doesn’t stack when in BtB with 2 victims. You can only ever profit from one of them.
 </p>
+<h2 id="trap-door-web">Trap Door Web <a role="anchor" aria-hidden="true" tabindex="-1" data-no-popover="true" href="#trap-door-web" class="internal">
+    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+      <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+    </svg>
+  </a>
+</h2>
 <p>
-  <strong>Trap Door Web:</strong>
   <em>Lightning Reflexes</em>
   <strong>does</strong> change the Initiative in the unique Melee Exchange. <em>Reach</em>
-  <strong>does not</strong> (it requires the enemy to enter BtB). “No model is surprised” also supersedes “auto-surprise” effects. Both models are exhausted and lose 1 die. This is intended. The Trap Door Melee does not require a Fear Test. The interaction with Camouflage and Disguise is still being discussed. The fact the Kumo cannot use Ki feats while the enemy can also. <strong>For now, play this by RAW:</strong> Trap Door Melee circumvents Camouflage and Disguise and breaks the Disguised state.
-</p>
-
-
-<h3>Cult of Yurei</h3>
-<p>
-  <strong>Q: On Umeka’s Feat, Curse of Stinging Needles” Is the -1 in Tough (-1) a modifier or a number?</strong> A: Modifier. It does stack, including with itself. If we ever have something gain a negative value trait, we’ll word it differently.
+  <strong>does not</strong> (it requires the enemy to enter BtB). <br /> ”No model is surprised” also supersedes “auto-surprise” effects. <br /> The Trap Door Melee does not require a Fear Test.
 </p>
 <p>
-  <strong>Q: Can I use the Spirit Defence Ritual on a Yuta to get one Ki Feat for free once?</strong> A: No, the wounds aren’t marked so no benefit is gained.
+  <strong>Q: Both models participating in the Melee exchange are exhausted, losing 1 dice each. Intended?</strong>
+  <br /> A: Yes.
 </p>
 <p>
-  <strong>Q: For Crush The Oppressed are additional Controlled Markers added or, since more Controlled Markers are added, do they get removed?</strong> A: Control Markers are not added, they are doubled so you will end up with twice as many, not all cancelled out.
+  <strong>Q: Does the Trap Door circumvent Camouflage, Fear and Disguise and thus break the Disguised state after the Melee Sequence is resolved?</strong>
+  <br /> Yes.
 </p>
-
-
-<h3>Descension</h3>
+<hr />
 <p>
-  <strong>Q: Are the Temple and Descension Gorinto cards supposed to have different effects?</strong> A: Yes, in hindsight we should have changed the name on one of them.
-</p>
-
-
-<h3>Ito Clan</h3>
-<p>
-  <strong>Q: If using the Serpent’s Coil theme, multiple models take damage due to poison, do my models gain multiple Ki?</strong> A: This can trigger multiple times granting multiple Ki. Note the models Poisoned do not have to be Enemy models.
-</p>
-
-
-<h3>Jung Pirates</h3>
-<p>
-  <strong>Q: The Knife Enhancement - Equipment card can be used by Crabs but Animals and Swarms cannot have special cards attached. How does this work?</strong> A: The text allowing the crabs to have the card should reference the Enhancement rule preventing these types from using the card, thus has priority. All types of Crab model may use the knife regardless of Animal/Swarm type.
-</p>
-
-
-<h3>KKZ</h3>
-<p>
-  <strong>Q: Can the KKZ Worm ability “Kohai” be used to duplicate feats gained from special cards?</strong> A: No. You may only duplicate feats physically on the card.
+  <strong>Q: Endless Procession: do they count for the Kumo Fear value, enabling values of 8+?</strong>
+  <br /> Yes. Officially confirming they do count. If this causes too many issues, this ruling may be revised.
 </p>
 <p>
-  <strong>Q: Can the Skirmish Mission theme allow me to exceed the Max value of Enhancements or Terrain special cards?</strong> A: No. While this is technically after the warband recruitment, restrictions will still apply.
+  <strong>Q: Does Touwa pay 2 Ki for destroying a webbed victim terrain to then gain 3 Ki?</strong>
+  <br /> A: No, he does not pay 2 Ki.
 </p>
 <p>
-  <strong>Q: Can Axiam use Special Attacks gained from his Unique Effect on Ranged Weapons.</strong> A: No.
+  <strong>Q: The Kumo model cannot Ki boost or use Ki Feats because of being Elsewhere, the opposing model can use boosts and I Ki Feats. Correct?</strong>
+  <br /> A: Yes.
+</p>
+<h1>Ronin</h1>
+<p>
+  <strong>Q: Can a Giant Eagle or Eagle of the Jwar Isles use their Unique Effects to go into Flank and then Deploy during the same turn?</strong>
+  <br /> A: Yes. The player chooses the order to resolve their Starting Phase effects, so they can choose to use the Unique Effect and then deploy any Flank models for the turn.
 </p>
 <p>
-  <strong>Q: Phantom’s and Spectre’s ability to Summon the other of the pair and replace themselves with the Summoned one has different wording, is this correct?</strong> A: Yes, this is correct. If you recruited Phantom (either alone or together with Spectre), Spectre cannot Summon Phantom. Phantom can always Summon Spectre if Spectre is not yet or no longer in play. Their ability to swap places on the battlefield is not affected by this.
-</p>
-<p>
-  <strong>Q: If Phantom or Spectre Summon the other of the pair, how much health does the Summoned model have?</strong> A: They have exactly as much health as they had the last time they were in play in this match. If they haven’t yet been in play or have been killed previously, they appear with full health. Using this swap does not heal or add damage to the wound track.
-</p>
-<p>
-  <strong>Q: How are Activation Counters actually handled when Phantom or Spectre Summon the other of the pair?</strong> A: Removing the Summoning model from play ends their activation and they lose an Activation Counter. The Summoned model then receives the remaining Activation Counters. The Summoned model does not immediately activate. Effectively, the Summoning was the complete activation. Their ability to swap places on the battlefield is not affected by this, the active model remains active and continues their activation.
-</p>
-<p>
-  <strong>Q: Who is the origin for the Damage Roll from Spectre’s unique effect?</strong> A: Spectre is the origin for this damage roll, so Spectre’s weapon, modifiers and Traits apply to this damage roll.
-</p>
-<p>**Q: State Markers are not transferred over when Phantom or Spectre Summon the other of the pair, what happens to these Markers? ** A: Models that are not in play cannot have Markers, so all Markers are removed if the model leaves play. </p>
-
-
-<h3>Kinshi Temple</h3>
-<p>
-  <strong>Q: What existing Ronin profiles are available to the faction?</strong> A: In addition to Ronin with the Kinshi Faction symbol on the back of their card, Tenbatsu, Kami of Blighted Earth, and Kami of Choking Fog are available to the Kinshi Temple Faction.
-</p>
-<p>
-  <strong>Q: Do effects that increase the cost of Ki Feats work (such as Disturb Flow trait or the Tax Ki Feat) on the Kinshi Temple Ki Feats?</strong> A: No. They use these feats at no cost.
-</p>
-
-
-<h3>Prefecture of Ryu</h3>
-<p>Trained Dog Aki “teleports” to an Ashigaru that is being Ordered (as intended).</p>
-<p>
-  <strong>Hiro’s “Heir by Blood”:</strong> Inspiration lets you increase <em>either</em> Melee <em>or</em> Ranged, not both.
-</p>
-
-
-<h3>Shiho Clan</h3>
-<p>
-  <strong>Q: Will Unfurled Wing trigger if I put an Eagle of the Jwar Isles / Giant Eagle Elsewhere and Deploy it on the same turn?</strong> A: No. If no models are going to be Deployed from Elsewhere via Flank at the time of the Tactical Test, then Unfurled Wing will not trigger.
-</p>
-
-
-<h3>STS</h3>
-<p>
-  <strong>Q: For the Hidden Agenda card for the Silvermoon Trade Syndicate, can you take Ronin event cards?</strong> A: Yes.
-</p>
-
-
-<h3>Temple of Ro-Kan</h3>
-<p>
-  <strong>Q: Are the Temple and Descension Gorinto cards supposed to have different effects?</strong> A: Yes, in hindsight we should have changed the name on one of them.
+  <strong>Kami of the Morning Dew</strong> “may” decide between his two options, although “healing nobody” was an option already, too.
 </p>
 
 <!-- 4.0 MathJax Add-on
