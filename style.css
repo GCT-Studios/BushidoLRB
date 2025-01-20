@@ -320,7 +320,7 @@ ol, ul a {
     font-weight: bold;
 }
 
-li {
+li:not(.toc-element) {
 	position: relative;
 	left: 20px;
 }
